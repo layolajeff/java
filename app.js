@@ -1,7 +1,8 @@
-function welcomePersonToFES(name) {
-    console.log('Welcome to FrontendSimplified, ${name}')
-}
+let dollars = [1, 5, 10, 3];
 
-welcomePersonToFES('David');
-welcomePersonToFES('Zen');
-welcomePersonToFES('Mitri');
+let cents = [];
+
+for (let i =0; i <dollars.length; ++i)
+    cents.push(dollars [i] * 100);
+
+console.log(cents)
