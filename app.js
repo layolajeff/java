@@ -1,13 +1,11 @@
-function isLoggedInandSubscribed(loggedin, subscribed) {
-   if (loggedin === 'LOGGED_IN' || subscribed === 'SUBSCRIBED') {
-    return true;
-   }
+function getMax (arr) {
+    let max = arr [0];
+    for (let i = 0; i < arr.length; ++i) {
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+    }
+    return max;
+}
 
- 
-    return false;
-   }
-   
-
-
-
-console.log (isLoggedInandSubscribed('LOGGED_IN', 'UNSUBSCRIBED'))
+console.log (getMax([-100, -200, -300]));
